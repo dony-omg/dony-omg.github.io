@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Cody Studio</title>
+  <style>
+    :root {
+      --bg: #0f141c;
+      --card-bg: #18202c;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #f2994a;
+      --accent-hover: #ffaa5e;
+      --border: #30363d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.5px;
+    }
+    .tagline {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+    }
+    .notice {
+      background: rgba(242, 153, 74, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 0.75rem 1rem;
+      margin-bottom: 2rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      color: #fbd38d;
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+    }
+    .game-list {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .game-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      transition: border-color 0.2s ease;
+    }
+    .game-card:hover {
+      border-color: var(--accent);
+    }
+    .game-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .badge {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-weight: 500;
+    }
+    .badge-upcoming {
+      background: #233044;
+      color: #79c0ff;
+    }
+    .badge-active {
+      background: #1b3a27;
+      color: #7ee787;
+    }
+    .game-desc {
+      color: var(--text-muted);
+      font-size: 0.925rem;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Deep Cody Studio</h1>
+      <p class="tagline">Game indie mang hơi thở đường phố và nhịp sống Việt Nam.</p>
+    </header>
+
+    <div class="notice">
+      ⏸ <strong>Bước 0.3:</strong> Trang phục vụ xác thực Google Play & AdMob. Đang chờ cập nhật <code>PUB_ID</code> và <code>EMAIL</code> liên hệ từ studio.
+    </div>
+
+    <h2>Danh mục trò chơi</h2>
+    <div class="game-list">
+      <div class="game-card">
+        <div class="game-title">
+          <span>01 · Hủ Tiếu Gõ 2 Giờ Sáng</span>
+          <span class="badge badge-upcoming">Sắp ra mắt</span>
+        </div>
+        <p class="game-desc">Game anomaly kinh dị nhẹ góc nhìn thứ nhất trong hẻm Sài Gòn khuya: đẩy xe hủ tiếu gõ qua con hẻm lặp vô hạn, phát hiện điểm bất thường để thoát.</p>
+      </div>
+
+      <div class="game-card">
+        <div class="game-title">
+          <span>06 · Gánh Hàng Rong</span>
+          <span class="badge badge-active">Đã phát hành / Thử nghiệm</span>
+        </div>
+        <p class="game-desc">Game merge vật lý 2D món ăn đường phố Việt Nam trên đôi quang gánh phố cổ Hội An: thúng tre nghiêng theo trọng lượng món ăn.</p>
+      </div>
+
+      <div class="game-card">
+        <div class="game-title">
+          <span>02 · Kẹt Xe</span>
+          <span class="badge badge-upcoming">Sắp ra mắt</span>
+        </div>
+        <p class="game-desc">Puzzle mũi tên thoát ngã tư Sài Gòn: mỗi chiếc xe máy là một mũi tên, chạm đúng thứ tự để gỡ ngã tư kẹt cứng và mở bức tranh văn hóa.</p>
+      </div>
+
+      <div class="game-card">
+        <div class="game-title">
+          <span>04 · Hẻm Ngập</span>
+          <span class="badge badge-upcoming">Sắp ra mắt</span>
+        </div>
+        <p class="game-desc">Platformer 2D vui nhộn về mùa mưa Sài Gòn: lái xe máy vượt hẻm ngập nước với hàng loạt bẫy bất ngờ.</p>
+      </div>
+
+      <div class="game-card">
+        <div class="game-title">
+          <span>03 · Gánh Sort</span>
+          <span class="badge badge-upcoming">Dự án thử nghiệm</span>
+        </div>
+        <p class="game-desc">Sort puzzle vật liệu món ăn đường phố: rót trà sữa, xếp trân châu nhiều màu, chia bánh tráng trộn.</p>
+      </div>
+
+      <div class="game-card">
+        <div class="game-title">
+          <span>05 · Dọn Nhà Đón Tết</span>
+          <span class="badge badge-upcoming">Sắp ra mắt</span>
+        </div>
+        <p class="game-desc">Trò chơi ASMR lau dọn, đánh bóng lư đồng, bày mâm ngũ quả đón Tết cổ truyền.</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="links">
+        <a href="/privacy/">Chính sách quyền riêng tư (VI)</a>
+        <a href="/privacy/en/">Privacy Policy (EN)</a>
+        <a href="/app-ads.txt">app-ads.txt</a>
+      </div>
+      <div>&copy; 2026 Deep Cody Studio. All rights reserved.</div>
+    </footer>
+  </div>
+</body>
+</html>
